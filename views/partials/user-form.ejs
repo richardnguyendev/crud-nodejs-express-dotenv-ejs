@@ -1,0 +1,36 @@
+<div class="col-12">
+    <select name="departmentID" id="departmentID" class="form-control" required>
+        <option selected disabled>Choose Department</option>
+        <% data.forEach(item =>{ %>
+            <option value="<%= item.departmentID %>"> <%= item.departmentName %> </option>
+        <% })%>
+                          
+    </select>
+</div>           
+<div class="col-6">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="employeeName" name="employeeName">
+        <label for="floatingInput">EmployeeName</label>
+      </div>
+</div>           
+<div class="col-6">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="sex" name="sex">
+        <label for="floatingInput">Sex</label>
+      </div>
+</div>    
+<div class="col-6">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="birthday" name="birthday">
+        <label for="floatingInput">Birthday</label>
+      </div>
+</div>    
+<div class="col-6">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="salary" name="salary">
+        <label for="floatingInput">Salary</label>
+      </div>
+</div>
+<div class="col-12 d-grid">
+    <button class="btn btn-primary" type="submit">Save</button>
+</div>
